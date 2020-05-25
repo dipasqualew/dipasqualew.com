@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-    <h1>Thoughts</h1>
+    <h1>Thoughts (by William Di Pasquale)</h1>
 
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2>{{ edge.node.title }}</h2>

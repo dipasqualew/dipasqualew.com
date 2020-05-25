@@ -17,6 +17,7 @@ const loadFixture = (addCollection, fixture) => {
 };
 
 const loadDatabase = async (addCollection) => {
+    console.log("Loading Posts from AWS DynamoDB.");
     const items = await readPosts();
     const collection = addCollection("Post");
 

@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "publish": "netlify deploy --prod --dir dist"
   },
   "dependencies": {
     "aws-sdk": "^2.683.0",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
+    "netlify-cli": "^2.51.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
