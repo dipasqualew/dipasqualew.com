@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Dev Diary: Server side rendering",
+        "date": "2020-05-24",
+        "tags": [
+            "development",
+            "photion"
+        ],
+        "content": "I started developing Photion to help my wife, Alina, backup and publish her photographies."
+    }
+]

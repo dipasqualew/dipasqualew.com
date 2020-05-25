@@ -1,0 +1,19 @@
+{
+  "name": "dipasqualewcom",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.683.0",
+    "gridsome": "^0.7.0",
+    "tailwindcss": "^1.4.6",
+    "vuetify": "^2.2.29"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
