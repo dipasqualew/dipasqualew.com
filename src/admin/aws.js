@@ -5,13 +5,11 @@ const AWS = require("aws-sdk");
 const POSTS_TABLE = "dipasqualewcom__posts";
 
 const getDb = () => {
-    AWS.config.update({
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_KEY_ID,
-        region: process.env.AWS_REGION,
+    const client = new AWS.DynamoDB.DocumentClient({
+        accessKeyId: process.env.SITE_AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.SITE_AWS_SECRET_KEY_ID,
+        region: process.env.SITE_AWS_REGION,
     });
-
-    const client = new AWS.DynamoDB.DocumentClient();
 
     return client;
 };
