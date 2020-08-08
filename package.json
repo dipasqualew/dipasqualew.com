@@ -14,8 +14,8 @@
     "vuetify": "^2.2.29"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
-    "netlify-cli": "^2.51.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "netlify-cli": "^2.59.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
