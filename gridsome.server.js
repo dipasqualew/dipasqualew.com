@@ -17,8 +17,7 @@ const loadFixture = (addCollection, fixture) => {
 };
 
 const loadDatabase = async (addCollection) => {
-    console.log("Loading Posts from AWS DynamoDB.");
-    const items = await readPosts();
+    const items = []; // await readPosts();
     const collection = addCollection("Post");
 
     items.forEach((item) => {
@@ -29,8 +28,8 @@ const loadDatabase = async (addCollection) => {
 module.exports = (api) => {
 
     api.loadSource(async ({ addCollection }) => {
-        // loadFixture(addCollection, "Post");
-        await loadDatabase(addCollection);
+        loadFixture(addCollection, "Post");
+        // await loadDatabase(addCollection);
     });
 
     api.createPages(({ createPage }) => {
