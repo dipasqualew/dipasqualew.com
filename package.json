@@ -8,7 +8,7 @@
     "publish": "netlify deploy --prod --dir dist"
   },
   "dependencies": {
-    "aws-sdk": "^2.764.0",
+    "aws-sdk": "^2.768.0",
     "gridsome": "^0.7.21",
     "tailwindcss": "^1.8.10",
     "vuetify": "^2.3.12"
