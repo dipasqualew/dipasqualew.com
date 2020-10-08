@@ -10,7 +10,7 @@
   "dependencies": {
     "aws-sdk": "^2.764.0",
     "gridsome": "^0.7.21",
-    "tailwindcss": "^1.8.10",
+    "tailwindcss": "^1.8.12",
     "vuetify": "^2.3.12"
   },
   "devDependencies": {
