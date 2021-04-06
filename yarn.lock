@@ -2415,10 +2415,10 @@ vue-router@4.0.0:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.0.tgz#1fbf642ec66a6b06305af288b70cc2ad6ff2b9d3"
   integrity sha512-RiAsDsSV73TBqppgpAKghb5exHHKsFuTii7hbhj9QHjWJNDE4lBDTr7bVALG9DH9vVcFI+7PUTBGYbytBFsWsQ==
 
-vue-tsc@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.0.15.tgz#2951f0479bf0b966c828748927e8ea5b82a15070"
-  integrity sha512-l7My4ubz11yoOwnxmgfqDV1DH0VgdkDm+AxrTAIAljsG7JrKkJ++AbhmxjzF2viMJvGbKN0rH+0+ErIkatK3oA==
+vue-tsc@^0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.0.21.tgz#f11194e9d1c3c01523e0e5dc2b909ec548035cd1"
+  integrity sha512-a4fy1KusXvgEg+IhNbjcdvgVeJfS6AjhMR9X6tc4nrw8KhEHce7h5dCESOgoLt81EmbfY39TbvMcUBi6wqvrLA==
   dependencies:
     unzipper "0.10.11"
 
