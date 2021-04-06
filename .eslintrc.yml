@@ -1,0 +1,37 @@
+root: true
+extends:
+  - dipasqualew/mixins/base
+  - dipasqualew/mixins/imports
+  - dipasqualew/mixins/jsdoc
+
+overrides:
+  -
+    files:
+      - "*.ts"
+    extends:
+      - dipasqualew/mixins/base
+      - dipasqualew/mixins/imports
+      - dipasqualew/mixins/jsdoc
+      - dipasqualew/mixins/ts
+
+  -
+    files:
+      - "*.vue"
+    extends:
+      - "plugin:vue/vue3-recommended"
+      - dipasqualew/mixins/base
+      - dipasqualew/mixins/imports
+      - dipasqualew/mixins/jsdoc
+      - dipasqualew/mixins/nuxt
+    parserOptions:
+      parser: "@typescript-eslint/parser"
+
+    rules:
+      vue/max-attributes-per-line:
+        - error
+        -
+          singleline: 3
+
+ignorePatterns:
+  - vite.config.ts
+  - src/shims-vue.d.ts
