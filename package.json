@@ -1,0 +1,16 @@
+{
+  "name": "dipasqualew.com",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.16.0",
+    "spectre.css": "^0.5.9"
+  }
+}

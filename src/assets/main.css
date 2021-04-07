@@ -1,0 +1,58 @@
+html {
+  overflow-y: scroll;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.app {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app main {
+  padding: 0px 1rem;
+  width: 100%;
+  max-width: 750px;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:active, a:hover, a.active {
+  color: #334790;
+  text-decoration: none;
+}
+
+.app header {
+  background-color: #253758;
+  color: white;
+  width: 100%;
+}
+
+.app header .app-menu {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  margin: auto;
+  padding: 3px 1rem;
+}
+
+
+.app header a,
+.app header a:active,
+.app header a:visited,
+.app header a:hover,
+.app header a.active {
+  color: white;
+}
+
+.app main {
+  margin-top: 2rem;
+}
+
+.app main div {
+  margin: 1rem 0;
+}

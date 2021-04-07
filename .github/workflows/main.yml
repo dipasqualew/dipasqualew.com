@@ -1,0 +1,72 @@
+name: main
+
+on:
+  - push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Restore node_modules cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: |
+          yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Upload dist folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist-${{ github.sha }}
+          path: dist
+
+  publish-netlify:
+    name: Deploy to Production
+    if: github.ref == 'refs/heads/master'
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Restore node_modules cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: |
+          yarn install
+          yarn netlify --telemetry-disable
+      - name: Download dist folder
+        uses: actions/download-artifact@v2
+        with:
+          name: dist-${{ github.sha }}
+          path: dist
+
+      - name: Publish on Netlify (production)
+        run: yarn netlify deploy --dir=dist --prod --message='${{ github.sha }}::${{ github.actor }}'
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
