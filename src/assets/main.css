@@ -56,3 +56,11 @@ a, a:active, a:hover, a.active {
 .app main div {
   margin: 1rem 0;
 }
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

@@ -28,6 +28,9 @@ jobs:
 
       - name: Build
         run: yarn build
+        env:
+          GRIDSOME_BASE_URL: ${{ secrets.GRIDSOME_BASE_URL }}
+          GRIDSOME_PLAUSIBLE_HOST: ${{ secrets.GRIDSOME_PLAUSIBLE_HOST }}
 
       - name: Upload dist folder
         uses: actions/upload-artifact@v2

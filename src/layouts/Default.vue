@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <header>
+    <header class="no-print">
       <div class="app-menu">
         <div class="mr-2">
           <g-link to="/">
@@ -35,7 +35,7 @@ export default {
       type: String,
       required: true,
     }
-  }
+  },
 }
 </script>
 
