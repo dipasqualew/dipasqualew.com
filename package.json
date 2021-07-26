@@ -11,7 +11,7 @@
     "plausible-tracker": "^0.3.1"
   },
   "devDependencies": {
-    "netlify-cli": "^3.16.0",
+    "netlify-cli": "^5.2.6",
     "spectre.css": "^0.5.9"
   }
 }
