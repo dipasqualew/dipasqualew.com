@@ -12,7 +12,7 @@
       <div>
         I joined the company as employee #55 and seen a 300% growth of personnel in the following 9 months.
         Collaborating with Engineering Managers and Product Managers,
-        I have I grew the original Microservices Team into two independent squads autonomously delivering on wide domains.
+        I grew the original Microservices Team into two independent squads delivering on wide domains.
       </div>
       <div>
         <strong>Responsibilities</strong>
