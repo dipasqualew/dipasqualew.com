@@ -3,7 +3,7 @@
     org-name="Comic Relief"
     title="Senior Engineer"
     start="14 July 2020"
-    end="Current"
+    end="14 June 2021"
   >
     <template #description>
       <div>
